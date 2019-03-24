@@ -6,6 +6,8 @@ In both the SmartThings and the Hubitat development environments, `state` variab
 
 When using this library, `getHubPlatform()` ***MUST*** be called from the `installed()` method before accessing the state variables. Then you can use `state.hubPlatform`, `state.isST` and `state.isHE` in your runtime code.
 
+Note also that you only need to insert the text between the two lines of asterisks into your code - the rest is just comments.
+
 ### metadata{}-safe calls
 The following 3 calls are safe to use anywhere within a Device Handler or Application
   - these can be called (e.g., if (getPlatform() == 'SmartThings'), or referenced (i.e., if (platform == 'Hubitat') )
